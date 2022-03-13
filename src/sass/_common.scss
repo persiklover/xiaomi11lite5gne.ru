@@ -1,0 +1,52 @@
+body {
+  font-family: "Myriad Pro", sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+
+  @include sm {
+    font-size: 2.8rem;
+  }
+}
+
+b {
+  font-weight: bold;
+}
+
+main {
+  overflow-x: hidden;
+}
+
+.section {
+  overflow: hidden;
+  text-align: center;
+
+  &:focus {
+    outline: none;
+  }
+
+  &__scrolldown {
+
+    @include sm {
+      display: none;
+    }
+
+    img {
+      height: 3.5rem;
+    }
+  }
+}
+
+.sm-only {
+  display: none;
+
+  @include sm {
+    display: block;
+  }
+}
+
+.hide-sm {
+  @include sm {
+    display: none;
+  }
+}
+  

@@ -1,0 +1,82 @@
+.section4 {
+  background: 
+    url(../img/section4-bg.png)  no-repeat left  5.5rem / 23rem,
+    url(../img/section4-bg2.png) no-repeat right 5.5rem / 24.8rem;
+    padding: 3rem 0 12rem;
+    
+  @include sm {
+    background: 
+      url(../img/section4-bg.png)  no-repeat left  5.5rem / 15.9rem,
+      url(../img/section4-bg2.png) no-repeat right 5.5rem / 16.7rem;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  &__inner {
+    text-align: left;
+  }
+
+  &__mask {
+    position: absolute;
+    left: 8rem;
+    top:  0;
+    height: 41.5rem;
+
+    @include sm {
+      position: static;
+      margin: 0 auto;
+      height: 28.6rem;
+    }
+  }
+
+  &-content {
+    margin-left: 72rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @include sm {
+      margin-top: 7.5rem;
+      margin-left: 0;
+
+      align-items: center;
+
+      text-align: center;
+    }
+
+    > * {
+      margin-top: 0;
+      margin-bottom: 3rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    ul, ol {
+      margin-left: .9em;
+      padding: 0;
+      text-align: left !important;
+    }
+
+    a {
+      text-decoration: underline;
+
+      &:hover,
+      &:focus {
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__title {
+    font-size: inherit;
+    @include headline();
+  }
+
+  &__btn {
+    margin-bottom: 4.2rem;
+  }
+}

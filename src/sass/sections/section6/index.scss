@@ -1,0 +1,94 @@
+.section6 {
+  background: white;
+  padding: 5.5rem 0 14rem;
+
+  @include sm {
+    padding: 3.7rem 0 20rem;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__headline {
+    align-self: flex-start;
+
+    margin: 0;
+    margin-left: 72rem;
+    margin-bottom: 3.5rem;
+
+    font-weight: 300;
+    text-align: left;
+
+    @include sm {
+      align-self: center;
+      
+      margin-left: 0;
+      margin-bottom: 7.5rem;
+
+      font-size: 2.8rem;
+      text-align: center;
+    }
+  }
+
+  &__video {
+    border: 0.9rem solid #fff;
+    border-radius: 1rem;
+
+    &-container {
+      position: relative;
+      z-index: 0;
+      width: 92.8rem;
+      border: 0.9rem solid #fff;
+
+      @include sm {
+        margin: 0 -5rem;
+        width: 103%;
+        width: calc(100% + 2rem);
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top:  50%;
+        transform: translate(-50%, -50%);
+
+        background: url(../img/video-bg.png) no-repeat center / cover;
+        width: 134.9rem;
+        height: 92.7rem;
+        opacity: 0.38;
+
+        @include no-select();
+
+        @include sm {
+          background-image: url(../img/video-bg-mobile.png);
+          width:  76.8rem;
+          height: 68.4rem;
+          opacity: 0.38;
+        }
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        left: 28.8rem;
+        top:   7.7rem;
+
+        display: none;
+        width:  63.9rem;
+        height: 78.3rem;
+        background: url(../img/video-bg2.png) no-repeat center / cover;
+
+        @include no-select();
+
+        @include sm {
+          display: block;
+        }
+      }
+    }
+  }
+}

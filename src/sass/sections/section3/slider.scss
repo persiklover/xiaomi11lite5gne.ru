@@ -1,0 +1,70 @@
+.slider {
+  position: relative;
+
+  .owl {
+    &-dot {
+      position: relative;
+      display: inline-flex;
+      margin-right: 1rem;
+      background: none !important;
+      border: 1px solid black !important;
+      border-radius: 50%;
+      width:  1.5rem;
+      height: 1.5rem;
+
+      font-size: 0;
+
+      &.active {
+        background: radial-gradient(black 55%, transparent 55%) !important;
+      }
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+
+      &s {
+        position: absolute;
+        z-index: 0;
+        right: 42.75rem;
+        top:   60.5rem;
+        transform: translateX(-50%);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include sm {
+          display: none;
+        }
+      }
+    }
+
+    &-nav {
+      display: none;
+
+      @include sm {
+        display: block;
+      }
+    }
+
+    &-prev,
+    &-next {
+      position: absolute;
+      top: 85rem;
+
+      width:  4.2rem;
+      height: 4.2rem;
+      background: url(../img/arrow-right.svg) no-repeat center / 12rem !important;
+    }
+
+    &-prev {
+      left: 4rem;
+      transform: rotate(-180deg);
+    }
+
+    &-next {
+      right: 4rem;
+    }
+  }
+
+}

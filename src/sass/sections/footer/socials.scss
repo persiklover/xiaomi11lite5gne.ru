@@ -1,0 +1,27 @@
+.socials {
+  display: flex;
+  align-items: center;
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    margin-right: 2.5rem;
+    display: inline-flex;
+
+    &:first-child {
+      svg {
+        height: 4.3rem;
+      }
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    svg {
+      height: 5rem;
+    }
+  }
+}

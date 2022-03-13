@@ -1,0 +1,28 @@
+.btn {
+  min-width: 14.5rem;
+  border: 0.115em solid #000;
+  border-radius: 1.115em;
+  padding: 0.4em 1.675em 0.55em;
+
+  font-family: 'Myriad Pro';
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: -0.017rem;
+  text-decoration: none !important;
+  text-transform: lowercase;
+
+  &--gradient {
+    border-color: transparent;
+    background: 
+      linear-gradient(#fff,#fff) padding-box,
+      linear-gradient(to right, #4e70ed 0%, #4e70ed 12%, #7da5ed 51%, #ff7785 90%, #ff7785 100%) border-box;
+  }
+
+  @include sm {
+    min-width: 21.5rem;
+    padding-left:  1em;
+    padding-right: 1em;
+    font-size: inherit;
+  }
+}

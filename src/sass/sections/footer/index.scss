@@ -1,0 +1,36 @@
+@import "./socials";
+
+.footer {
+  background-color: #292929;
+  padding: 15rem 0 12.5rem;
+
+  @include sm {
+    padding: 9.5rem 0 8.5rem;
+  }
+
+  font-size: 2.4rem;
+  color: #fefefe;
+  font-weight: 300;
+
+  @include sm {
+    font-size: 2.8rem;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__socials {
+    margin-bottom: 4rem;
+
+    @include sm {
+      margin-bottom: 3.5rem;
+    }
+  }
+
+  small {
+    font-size: inherit;
+  }
+}

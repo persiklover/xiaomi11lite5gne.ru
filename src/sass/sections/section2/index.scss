@@ -1,0 +1,99 @@
+.section2 {
+  padding: 3rem 0;
+
+  @include sm {
+    padding: 10.5rem 0 11.1rem;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    text-align: left;
+
+    @include sm {
+      justify-content: center;
+      text-align: center;
+    }
+  }
+
+  &-cover {
+    margin-left: 3rem;
+
+    height: 49.1rem;
+
+    @include sm {
+      display: none;
+    }
+  }
+
+  &-content {
+
+    @include sm {
+      font-size: 2.8rem;
+    }
+
+    > * {
+      margin-top: 0;
+      margin-bottom: 2.5rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    p br {
+      @include sm {
+        &:not(.sm-only) {
+          display: none;
+        }
+      }
+    }
+
+    h2 {
+      font-size: 2.6rem;
+
+      @include sm {
+        font-size: inherit;
+      }
+    }
+
+    p {
+      font-weight: 300;
+    }
+
+    &-artist {
+      display: flex;
+      align-items: center;
+
+      @include sm {
+        justify-content: center;
+      }
+
+      img {
+        margin-right: 1.7rem;
+        height: 15.5rem;
+
+        @include sm {
+          margin-right: 5rem;
+          height: 19.8rem;
+        }
+      }
+
+      figcaption {
+        font-size: 1.3rem;
+        font-weight: 300;
+
+        @include sm {
+          font-size: inherit;
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  &__scrolldown {
+    margin-top: 8rem;
+  }
+}

@@ -1,0 +1,51 @@
+$fonts: '../fonts/';
+
+/* Myriad Pro */
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src:
+    local('Myriad Pro Bold'),
+    local('MyriadPro-Bold'),
+    url($fonts + 'MyriadPro-Bold.woff2') format('woff2'),
+    url($fonts + 'MyriadPro-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src:
+    local('Myriad Pro Regular'),
+    local('MyriadPro-Regular'),
+    url($fonts + 'MyriadPro-Regular.woff2') format('woff2'),
+    url($fonts + 'MyriadPro-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src:
+    local('Myriad Pro Light'),
+    local('MyriadPro-Light'),
+    url($fonts + 'MyriadPro-Light.woff2') format('woff2'),
+    url($fonts + 'MyriadPro-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src:
+    local('Myriad Pro Semibold'),
+    local('MyriadPro-Semibold'),
+    url($fonts + 'MyriadPro-Semibold.woff2') format('woff2'),
+    url($fonts + 'MyriadPro-Semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}

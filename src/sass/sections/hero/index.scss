@@ -1,0 +1,108 @@
+.hero {
+  text-align: center;
+
+  $offset: .5rem;
+
+  @include sm {
+    padding-bottom: 9rem + $offset;
+  }
+
+  &__suptitle {
+    margin: 0;
+    margin-bottom: 3rem + $offset;
+
+    @include sm {
+      margin-bottom: 3.2rem + $offset;
+    }
+    
+    img {
+      margin: 0 auto;
+      height: 3.7rem + $offset;
+
+      @include sm {
+        height: 3.6rem + $offset;
+      }
+    }
+  }
+
+  &__title {
+    display: inline-block;
+    margin: 0;
+    margin-bottom: 6.7rem + $offset;
+
+    font-size: 5rem + $offset;
+    font-weight: 400;
+    letter-spacing: -0.024rem + $offset;
+
+    @supports(background-clip: text) {
+      background-image: linear-gradient(to right, #4e70ed 0%, #4e70ed 12%, #7da5ed 51%, #ff7785 90%, #ff7785 100%);
+      background-clip: text;
+      color: transparent;
+    }
+
+    @include sm {
+      margin-bottom: 4rem + $offset;
+
+      font-size: 4.8rem + $offset;
+    }
+  }
+
+  &__subtitle {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    margin-bottom: 14rem + $offset;
+
+    font-family: "Myriad Pro";
+    font-size: 2.5rem + $offset;
+    font-weight: 300;
+
+    @include sm {
+      margin-bottom: 23.5rem + $offset;
+
+      font-size: 2.8rem + $offset;
+    }
+  }
+
+  &-phones {
+    position: relative;
+    z-index: 0;
+    text-align: center;
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: 50%;
+      top: -24.5rem + $offset;
+      margin-left: -0.5em;
+      transform: translateX(-50%);
+
+      background: url(../img/hero-phones-bg.png) no-repeat center;
+      background-size: contain;
+      width:  70.7rem + $offset;
+      height: 62rem + $offset;
+      opacity: 0.9;
+
+      @include sm {
+        top: -20.5rem + $offset;
+
+        width:  65.8rem + $offset;
+        height: 57.6rem + $offset;
+      }
+    }
+
+    img {
+      margin: 0 auto;
+      height: 33.1rem + $offset;
+
+      @include sm {
+        height: 28.5rem + $offset;
+      }
+    }
+  }
+
+  &__scrolldown {
+    margin-top: 10rem + $offset;
+  }
+}

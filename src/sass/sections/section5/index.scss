@@ -1,0 +1,138 @@
+.section5 {
+  position: relative;
+  background: url(../img/section5-bg.png) no-repeat center bottom / contain;
+  padding: 6rem 0;
+
+  @include sm {
+    background-image: url(../img/section5-bg-mobile.png);
+  }
+
+  &::before {
+    position: absolute;
+    z-index: -1;
+    content: '';
+    left:          0;
+    bottom:  10.6rem;
+    width:   192rem;
+    height: 50.4rem;
+    background: url(../img/section5-clouds.png) no-repeat center / cover;
+
+    @include no-select();
+
+    @include sm {
+      background-image: url(../img/section5-clouds-mobile.png);
+      bottom: initial;
+      top: 13rem;
+      width:  76.8rem;
+      height: 46.7rem;
+    }
+  }
+
+  .container {
+    position: relative;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: flex-start;
+
+    text-align: left;
+
+    @include sm {
+      flex-direction: column;
+    }
+  }
+
+  &__cover {
+    margin-left:  1.8rem;
+    margin-right: 14rem;
+
+    height: 47.8rem;
+
+    @include sm {
+      margin: 0;
+      margin-left: 7.8rem;
+
+      height: 47.3rem;
+    }
+  }
+
+  &__cover2 {
+    position: absolute;
+    top:   -.8rem;
+    right: -7.2em;
+
+    height: 48rem;
+
+    @include sm {
+      right: 3.4em;
+    }
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @include sm {
+      margin: 0 auto;
+      align-items: center;
+    }
+  }
+
+  &__suptitle {
+    display: inline-block;
+    margin-top:    4.8rem;
+    margin-bottom: 2.2rem;
+
+    @include sm {
+      margin-top: 10rem;
+
+      align-self: flex-start;
+    }
+
+    img {
+      height: 2.2rem;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 6rem;
+
+    font-size: 5rem;
+
+    @include sm {
+      align-self: flex-start;
+
+      margin-bottom: 4.8rem;
+    }
+  }
+
+  &__targs {
+    margin: 0;
+    margin-bottom: 7.5rem;
+
+    @include sm {
+      margin-bottom: 8.2rem;
+    }
+  }
+
+  &__price {
+    @include sm {
+      font-size: 3.6rem;
+    }
+  }
+
+  &__btn {
+    margin-top: 3.3rem;
+
+    @include sm {
+      margin-top: 4.5rem;
+    }
+  }
+
+  &__scrolldown {
+    margin-top: 7.5rem;
+  }
+}

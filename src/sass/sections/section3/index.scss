@@ -1,0 +1,122 @@
+@import "./slider";
+
+.section3 {
+  padding: 8.5rem 0 0;
+
+  @include sm {
+    padding: 0 0 6rem;
+  }
+
+  &-slide {
+    padding: 4rem 0;
+    display: flex;
+    align-items: flex-start;
+
+    @include sm {
+      padding: 0;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &-cover {
+      position: relative;
+      z-index: 2;
+      margin-right: 7.5rem;
+      width: 93.1rem !important;
+
+      @include sm {
+        margin-bottom: 10rem;
+      }
+    }
+    
+    &-content {
+      position: relative;
+      z-index: 0;
+
+      max-width: 66rem;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      text-align: left;
+
+      @include sm {
+        text-align: center;
+        align-items: center;
+      }
+
+      > * {
+        margin-top: 0;
+        margin-bottom: 2.2rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      br:not(.sm-only) {
+        @include sm {
+          display: none;
+        }
+      }
+
+      &-phone {
+        margin: 0 auto;
+        margin-top: 6rem;
+
+        width: initial !important;
+        height: 47rem;
+      }
+
+      &-bg {
+        position: absolute;
+        z-index: -1;
+        left: 50%;
+        top:  0;
+        transform: translateX(-50%);
+
+        width: 44.9rem !important;
+
+        &.bg3 {
+          top: -3rem;
+        }
+
+        &.bg4 {
+          margin-left: -.5em;
+          margin-top: -1em;
+        }
+
+        &.bg5 {
+          margin-left: -0.5em;
+          margin-top: 5rem;
+        }
+
+        &.bg6 {
+          margin-left: -0.5em;
+          margin-top: -8rem;
+        }
+      }
+
+      &-headline {
+        display: inline-block;
+        align-self: center;
+        margin-top: 7.4rem;
+        height: 2.2rem;
+
+        @include sm {
+          margin-top: 6rem;
+        }
+      }
+
+      &-btn {
+        align-self: center;
+        margin-bottom: 5rem;
+      }
+    }
+  }
+
+  &__scrolldown {
+    margin-top: 15rem;
+  }
+}

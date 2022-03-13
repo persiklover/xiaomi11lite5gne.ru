@@ -1,0 +1,17 @@
+@mixin headline {
+  display: inline-block;
+  
+  font-size: 5rem;
+  font-weight: 400;
+  letter-spacing: -0.024rem;
+  
+  @supports(background-clip: text) {
+    background-image: linear-gradient(to right, #4e70ed 0%, #4e70ed 12%, #7da5ed 51%, #ff7785 90%, #ff7785 100%);
+    background-clip: text;
+    color: transparent;
+  }
+}
+
+.headline {
+  @include headline();
+}
